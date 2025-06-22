@@ -1,0 +1,36 @@
+El-Segmented
+.el-segmented__item {
+  background-color: transparent;
+  border-color: #ffffff;
+  @apply text-lightGray;
+}
+
+.el-segmented {
+  background-color: transparent;
+  border: 1px solid #ffffff3a;
+}
+
+.el-segmented__item-selected {
+  @apply text-theme rounded-full;
+}
+.el-segmented__item-label {
+  @apply mx-2 my-2 text-[0.8rem];
+}
+
+/* Skeleton */
+.el-skeleton {
+  --el-skeleton-circle-size: 27px;
+  &.is-animated .el-skeleton__item {
+    background: linear-gradient(
+      90deg,
+      #52525233 25%,
+      #52525250 37%,
+      #52525233 63%
+    );
+    background-size: 400% 100%;
+  }
+
+  .el-skeleton__text {
+    height: 20px;
+  }
+}
